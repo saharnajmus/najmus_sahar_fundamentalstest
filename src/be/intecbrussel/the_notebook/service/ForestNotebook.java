@@ -96,7 +96,17 @@ public class ForestNotebook {
 
     }
 
+    public void sortAnimalsByHeight() {
+        animals.sort(Comparator.comparingDouble(Animal::getHeight));
+
+    }
+
     public void sortPlantByName() {
         plants.sort(Comparator.comparing(Plant::getName));
     }
+
+    public void sortPlantByHeight() {
+        plants.sort(Comparator.comparingDouble(Plant::getHeight));
+    }
+
 }

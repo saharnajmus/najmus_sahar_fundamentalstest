@@ -69,9 +69,15 @@ public class NatureApp {
         System.out.println("***List of Omnivores***");
         omnivoreList.forEach(System.out::println);
 
-        System.out.println(" ***Sorted lists*** ");
+        System.out.println(" ***Sorted lists by name*** ");
         myForestNoteBook.sortAnimalsByName();
         myForestNoteBook.sortPlantByName();
+        myForestNoteBook.printNotebook();
+
+
+        System.out.println(" ***Sorted lists by height*** ");
+        myForestNoteBook.sortAnimalsByHeight();
+        myForestNoteBook.sortPlantByHeight();
         myForestNoteBook.printNotebook();
 
 
