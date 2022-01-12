@@ -75,7 +75,7 @@ public class ForestNotebook {
         }
     }
 
-    public void addPlant(Plant... plantsInputList) {
+   public void addPlant(Plant... plantsInputList) {
         for (Plant plant : plantsInputList) {
             if (!plants.contains(plant)) {
                 plants.add(plant);
