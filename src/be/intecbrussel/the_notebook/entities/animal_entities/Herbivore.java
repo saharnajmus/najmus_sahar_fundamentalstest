@@ -17,7 +17,6 @@ public class Herbivore extends Animal {
     }
 
     public Set<Plant> getPlantDiet() {
-        //focus here while making instances
         return plantDiet;
     }
 
@@ -39,12 +38,9 @@ public class Herbivore extends Animal {
                 plantDiet.add(plant);
             }
         }
-
     }
-
     public void printDiet() {
         plantDiet.forEach(System.out::println);
-
     }
 
     @Override
