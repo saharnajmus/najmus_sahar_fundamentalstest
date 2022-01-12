@@ -31,7 +31,7 @@ public class NatureApp {
         blueberry.setFruit("Blueberries");
 
         Weed cannabis = new Weed("Cannabis", 3.5);
-
+        cannabis.setArea(9.1);
 
         Carnivore lion = new Carnivore("Lion", 230, 1.2, 1.5);
         lion.setMaxFoodSize(50);
