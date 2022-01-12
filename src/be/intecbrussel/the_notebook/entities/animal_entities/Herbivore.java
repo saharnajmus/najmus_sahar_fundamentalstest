@@ -39,11 +39,8 @@ public class Herbivore extends Animal {
                 plantDiet.add(plant);
             }
         }
-        if (!(plant instanceof Weed)) {
-            plantDiet.add(plant);
-        }
-    }
 
+    }
 
     public void printDiet() {
         plantDiet.forEach(System.out::println);

@@ -12,13 +12,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ForestNotebook {
-    private List<Carnivore> carnivores = new ArrayList<>();
-    private List<Omnivore> omnivores = new ArrayList<>();
-    private List<Herbivore> herbivores = new ArrayList<>();
-    private int plantCount;
-    private int animalCount;
+    private List<Carnivore> carnivores = new LinkedList<>();
+    private List<Omnivore> omnivores = new LinkedList<>();
+    private List<Herbivore> herbivores = new LinkedList<>();
     private List<Animal> animals = new LinkedList<>();
     private List<Plant> plants = new LinkedList<>();
+    private int plantCount;
+    private int animalCount;
+
 
     public ForestNotebook() {
         this.animalCount = 0;
@@ -72,7 +73,6 @@ public class ForestNotebook {
                 }
             }
         }
-
     }
 
     public void addPlant(Plant... plantsInputList) {
@@ -80,25 +80,20 @@ public class ForestNotebook {
             if (!plants.contains(plant)) {
                 plants.add(plant);
             }
-
         }
-
     }
 
     public void printNotebook() {
         animals.forEach(System.out::println);
         plants.forEach(System.out::println);
-
     }
 
     public void sortAnimalsByName() {
         animals.sort(Comparator.comparing(Animal::getName));
-
     }
 
     public void sortAnimalsByHeight() {
         animals.sort(Comparator.comparingDouble(Animal::getHeight));
-
     }
 
     public void sortPlantByName() {
