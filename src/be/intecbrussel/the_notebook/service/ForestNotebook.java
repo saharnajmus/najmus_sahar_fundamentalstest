@@ -51,13 +51,14 @@ public class ForestNotebook {
     }
 
     public int getPlantCount() {
-        plantCount = plants.size();
-        return plantCount;
+       // plantCount = plants.size();
+        return plantCount++;
     }
 
     public int getAnimalCount() {
-        animalCount = animals.size();
-        return animalCount;
+        //animalCount = animals.size();
+
+        return animalCount++;
     }
 
     public void addAnimal(Animal... animalInputList) {
